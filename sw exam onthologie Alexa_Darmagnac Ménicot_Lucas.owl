@@ -1,0 +1,1092 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#"
+     xml:base="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:ontology="http://dbpedia.org/ontology/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot">
+        <dc:creator xml:lang="fr">Alexa Darmagnac</dc:creator>
+        <dc:creator xml:lang="fr">Lucas Ménicot</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">15/05/2020</dc:date>
+        <dc:title xml:lang="fr">Onthologie d&apos;art romantique</dc:title>
+        <rdfs:comment xml:lang="fr">Onthologie simple regroupant de l&apos;art romanique du 19e siècle</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exemple -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exemple"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#contain -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#contain">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#is_located_in"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:comment xml:lang="fr">La propriété contain est utilisé pour représenter la relation entre un lieu qui contient un autre lieu.</rdfs:comment>
+        <skos:exemple xml:lang="fr">&apos;France&apos; contain &apos;Paris&apos;</skos:exemple>
+        <skos:prefLabel xml:lang="fr">contain</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#died_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#died_in">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#saw_death_of"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/City"/>
+        <rdfs:comment xml:lang="fr">La propriété died_in est utilisé pour représenter la relation entre une personne et une ville</rdfs:comment>
+        <skos:exemple xml:lang="fr">&apos;Eugène&apos; Delacroix died_in &apos;Paris&apos;</skos:exemple>
+        <skos:prefLabel xml:lang="fr">died in</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#is_conserve_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#is_conserve_in">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#is_consevation_location"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Artwork"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Museum"/>
+        <rdfs:comment xml:lang="fr">La propriété is_conserve_in est utilisé pour représenter la relation entre une oeuvre et un musée</rdfs:comment>
+        <skos:exemple xml:lang="fr">&apos;La liberté guidant le peuple&apos; is_conserve_in &apos;Musée du Louvre&apos;</skos:exemple>
+        <skos:prefLabel xml:lang="fr">is conserve in</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#is_consevation_location -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#is_consevation_location">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Museum"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Artwork"/>
+        <rdfs:comment xml:lang="fr">La propriété is_conservation__location est utilisé pour représenter la relation entre un musée et une oeuvre</rdfs:comment>
+        <skos:exemple xml:lang="fr">&apos;Musée du Louvre&apos; is_conservation_location &apos;La liberté guidant le peuple&apos;</skos:exemple>
+        <skos:prefLabel xml:lang="fr">is conservation location</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#is_located_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#is_located_in">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:comment xml:lang="fr">La propriété is_located_in est utilisé pour représenter la relation entre un lieu qui se trouve dans un autre lieu.</rdfs:comment>
+        <skos:exemple xml:lang="fr">&apos;Paris&apos; is located in &apos;France&apos;</skos:exemple>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is located in</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#made -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#made">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#was_made_by"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Artist"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Artwork"/>
+        <rdfs:comment xml:lang="fr">La propriété made est utilisé pour représenter la relation entre un artiste qui a créé des oeuvres</rdfs:comment>
+        <skos:exemple xml:lang="fr">&apos;Eugène Delacroix&apos; made &apos;La liberté guidant le peuple&apos;</skos:exemple>
+        <skos:prefLabel>made</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#saw_born -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#saw_born">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#was_born_in"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/City"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <skos:definition xml:lang="fr">La propriété saw_born est utilisé pour représenter la relation entre une ville où est né une personne</skos:definition>
+        <skos:exemple xml:lang="fr">&apos;Charenton-Saint-Maurice&apos; saw_born &apos;Eugène Delacroix&apos;</skos:exemple>
+        <skos:prefLabel xml:lang="fr">saw birth</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#saw_death_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#saw_death_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/City"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:comment xml:lang="fr">La propriété saw_death_of est utilisé pour représenter la relation entre une ville et une personne</rdfs:comment>
+        <skos:exemple xml:lang="fr">&apos;Paris&apos; saw_death_of &apos;Eugène Delacroix&apos;</skos:exemple>
+        <skos:prefLabel xml:lang="fr">saw death of</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#was_born_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#was_born_in">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/City"/>
+        <rdfs:comment xml:lang="fr">La propriété was_born_in est utilisé pour représenter la relation entre une personne né dans un pays et/ou une ville</rdfs:comment>
+        <skos:exemple xml:lang="fr">&apos;Eugène Delacroix&apos; was_born_in &apos;Charenton-Saint-Maurice&apos;</skos:exemple>
+        <skos:prefLabel xml:lang="fr">was born in</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#was_made_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#was_made_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Artwork"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Artist"/>
+        <rdfs:comment xml:lang="fr">La propriété was_made_by est utilisé pour représenter la relation entre une oeuvre qui a été créée par un artiste</rdfs:comment>
+        <skos:exemple xml:lang="fr">&apos;La liberté guidant le peuple&apos; was_made_by &apos;Eugène Delacroix&apos;</skos:exemple>
+        <skos:prefLabel xml:lang="fr">was made by</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Has_Creation_Date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Has_Creation_Date">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Painting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:comment xml:lang="fr">La propriété Has_Creation_date est utilisé pour représenter la relation entre une œuvre et sa date de création.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="fr">friend of a friend</rdfs:isDefinedBy>
+        <skos:exemple rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1818</skos:exemple>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has creation date</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Has_Length_In_Cm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Has_Length_In_Cm">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Painting"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#decimal"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#int"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="fr">La propriété Has_Length_In_Cm est utilisé pour représenter la relation entre une œuvre et sa longeur en cm.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="fr">friend of a friend</rdfs:isDefinedBy>
+        <skos:exemple rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">78.8</skos:exemple>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has length in cm</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Has_Technique -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Has_Technique">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Painting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="fr">La propriété Has_Technique est utilisé pour représenter la relation entre une œuvre et sa technique.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="fr">friend of a friend</rdfs:isDefinedBy>
+        <skos:exemple rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Huile sur toile</skos:exemple>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has technique</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Has_Title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Has_Title">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Painting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="fr">La propriété Has_Title est utilisé pour représenter la relation entre une œuvre et son titre.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="fr">friend of a friend</rdfs:isDefinedBy>
+        <skos:exemple rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le voyageur contemplant une mer de nuages</skos:exemple>
+        <skos:prefLabel xml:lang="fr">has title</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Has_Witdth_In_Cm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Has_Witdth_In_Cm">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Painting"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#decimal"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#int"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="fr">La propriété Has_ Width_In_Cm est utilisé pour représenter la relation entre une œuvre et sa largeur en cm.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="fr">friend of a friend</rdfs:isDefinedBy>
+        <skos:exemple rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">94.4</skos:exemple>
+        <skos:prefLabel xml:lang="fr">has width in cm</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/birthDate -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/birthDate">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="fr">La propriété birthDate est utilisé pour représenter la relation entre un artiste et son année de naissance</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="fr">friend of a friend</rdfs:isDefinedBy>
+        <skos:exemple xml:lang="fr">26-04-1798</skos:exemple>
+        <skos:prefLabel xml:lang="fr">birth date</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/deathDate -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/deathDate">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="fr">La propriété deathDate est utilisé pour représenter la relation entre un artiste et la date de sa mort.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="fr">friend of a friend</rdfs:isDefinedBy>
+        <skos:exemple xml:lang="fr">13-08-1863</skos:exemple>
+        <skos:prefLabel xml:lang="fr">death date</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/firstName -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/firstName">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="fr">La propriété firstName est utilisé pour représenter la relation entre un artiste et son prénom</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="fr">friend of a friend</rdfs:isDefinedBy>
+        <skos:exemple xml:lang="fr">Eugène</skos:exemple>
+        <skos:prefLabel xml:lang="fr">first name</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/lastName -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/lastName">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="fr">La propriété lastName  est utilisé pour représenter la relation entre un artiste et son nom de famille</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="fr">friend of a friend</rdfs:isDefinedBy>
+        <skos:exemple xml:lang="fr">Delacroix</skos:exemple>
+        <skos:prefLabel xml:lang="fr">last name</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/Artist -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Artist">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#made"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://dbpedia.org/ontology/Artwork"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>dbpedia</rdfs:isDefinedBy>
+        <skos:definition xml:lang="fr">Classe regroupant tous les artistes</skos:definition>
+        <skos:exemple xml:lang="fr">Painter</skos:exemple>
+        <skos:prefLabel xml:lang="fr">Artist</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Artwork -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Artwork">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#was_made_by"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://dbpedia.org/ontology/Artist"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#is_conserve_in"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://dbpedia.org/ontology/Museum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://dbpedia.org/ontology/Person"/>
+        <owl:disjointWith rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:isDefinedBy>Dbpedia</rdfs:isDefinedBy>
+        <skos:definition xml:lang="fr">Classe regroupant toutes les classes d&apos;objets d&apos;art</skos:definition>
+        <skos:exemple xml:lang="en">Painting</skos:exemple>
+        <skos:prefLabel xml:lang="en">Artwork</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/City -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/City">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#contain"/>
+                <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/Museum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#saw_born"/>
+                <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#saw_death_of"/>
+                <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#is_located_in"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://dbpedia.org/ontology/Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="fr">dbpedia</rdfs:isDefinedBy>
+        <skos:exemple xml:lang="fr">Classe regroupant toute les villes</skos:exemple>
+        <skos:exemple xml:lang="fr">Paris</skos:exemple>
+        <skos:prefLabel xml:lang="en">City</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Country -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Country">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#contain"/>
+                <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy xml:lang="fr">dbpedia</rdfs:isDefinedBy>
+        <skos:definition xml:lang="fr">Classe regroupant tous les pays</skos:definition>
+        <skos:exemple xml:lang="fr">France</skos:exemple>
+        <skos:prefLabel xml:lang="en">Country</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Museum -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Museum">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#is_consevation_location"/>
+                <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/Artwork"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#is_located_in"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://dbpedia.org/ontology/City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy>dbpedia</rdfs:isDefinedBy>
+        <skos:definition xml:lang="fr">Classe regroupant tous les musées</skos:definition>
+        <skos:exemple xml:lang="fr">Musée du Louvre</skos:exemple>
+        <skos:prefLabel xml:lang="en">Museum</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Painter -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Painter">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Artist"/>
+        <rdfs:isDefinedBy>dbpedia</rdfs:isDefinedBy>
+        <skos:definition xml:lang="fr">Classe regroupant tous les peintres</skos:definition>
+        <skos:exemple xml:lang="fr">Eugène Delacroix</skos:exemple>
+        <skos:prefLabel xml:lang="fr">Painter</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Painting -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Painting">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Artwork"/>
+        <rdfs:isDefinedBy>dbpedia</rdfs:isDefinedBy>
+        <skos:definition xml:lang="fr">Classe regroupant toutes les peintures</skos:definition>
+        <skos:exemple xml:lang="fr">Le Radeau de la Méduse</skos:exemple>
+        <skos:prefLabel xml:lang="en">Painting</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Person -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Person">
+        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#died_in"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://dbpedia.org/ontology/City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#was_born_in"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://dbpedia.org/ontology/City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://dbpedia.org/ontology/Place"/>
+        <rdfs:isDefinedBy>dbpdia</rdfs:isDefinedBy>
+        <skos:definition xml:lang="fr">Classe regroupant tous les types de personnes</skos:definition>
+        <skos:exemple xml:lang="fr">Artist</skos:exemple>
+        <skos:prefLabel xml:lang="fr">Person</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Place -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Place">
+        <rdfs:isDefinedBy>dbpedia</rdfs:isDefinedBy>
+        <skos:definition xml:lang="fr">Classe regroupant tous les lieux géographique</skos:definition>
+        <skos:exemple xml:lang="fr">City</skos:exemple>
+        <skos:prefLabel xml:lang="fr">Place</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:isDefinedBy>friend of a friend</rdfs:isDefinedBy>
+        <skos:definition xml:lang="fr">Permet de faire le lien entre foaf:lastName et foaf:first:Name et dbo:Person</skos:definition>
+        <skos:prefLabel xml:lang="fr">foaf:Person</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Allemagne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Allemagne">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Country"/>
+        <skos:altLabel xml:lang="en">Germany</skos:altLabel>
+        <skos:definition xml:lang="fr">pays d&apos;Europe de l&apos;ouest</skos:definition>
+        <skos:prefLabel xml:lang="fr">Allemagne</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Bolton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Bolton">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/City"/>
+        <is_located_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Royaume-Uni"/>
+        <skos:definition xml:lang="fr">Ville anglaise située dans le comté du Grand Manchester au centre ouest de l&apos;Angleterre.</skos:definition>
+        <skos:prefLabel xml:lang="fr">Bolton</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Caspar_David_Friedrich -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Caspar_David_Friedrich">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Painter"/>
+        <died_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Dresde"/>
+        <made rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Le_Voyageur_contemplant_une_mer_de_nuages"/>
+        <was_born_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Greifswald"/>
+        <foaf:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">05-09-1774</foaf:birthDate>
+        <foaf:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">07-05-1840</foaf:deathDate>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caspar David</foaf:firstName>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Friedrich</foaf:firstName>
+        <skos:prefLabel>Caspar David Friedrich</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Catskill -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Catskill">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/City"/>
+        <is_located_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Etats-Unis"/>
+        <skos:definition xml:lang="fr">Ville situé dans le comté de Greene, dans l&apos;État de New York, aux États-Unis.</skos:definition>
+        <skos:prefLabel xml:lang="fr">Catskill</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Charenton-Saint-Maurice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Charenton-Saint-Maurice">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/City"/>
+        <is_located_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#France"/>
+        <skos:altLabel xml:lang="fr">Saint-Maurice</skos:altLabel>
+        <skos:definition xml:lang="fr">Ville Française situé en Ile-de-France, s&apos;appelle Saint-Maurice aujourd&apos;hui</skos:definition>
+        <skos:prefLabel xml:lang="fr">Charenton-Saint-Maurice</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Dresde -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Dresde">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/City"/>
+        <is_located_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Allemagne"/>
+        <skos:definition xml:lang="fr">Ville allemande situé dans le land Saxe dans l&apos;est</skos:definition>
+        <skos:prefLabel xml:lang="fr">Dresde</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Etats-Unis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Etats-Unis">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Country"/>
+        <skos:altLabel xml:lang="en">United States of America</skos:altLabel>
+        <skos:definition xml:lang="fr">Pays nord Américain</skos:definition>
+        <skos:prefLabel xml:lang="fr">États-Unis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Eugène_Delacroix -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Eugène_Delacroix">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Painter"/>
+        <died_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Paris"/>
+        <made rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#La_liberté_guidant_le_peuple"/>
+        <was_born_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Charenton-Saint-Maurice"/>
+        <foaf:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">26/04/1798</foaf:birthDate>
+        <foaf:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">13-08-1863</foaf:deathDate>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ferdinand-Victor-Eugène</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Delacroix</foaf:lastName>
+        <skos:altLabel>Ferdinand-Victor-Eugène Delacroix</skos:altLabel>
+        <skos:prefLabel>Eugène Delacroix</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#France -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#France">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Country"/>
+        <skos:definition xml:lang="fr">Pays d&apos;Europe de l&apos;ouest</skos:definition>
+        <skos:prefLabel xml:lang="fr">France</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Greifswald -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Greifswald">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/City"/>
+        <is_located_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Allemagne"/>
+        <skos:definition xml:lang="fr">Ville allemande dans le land Mecklembourg-Poméranie-Occidentale situé au nord-est</skos:definition>
+        <skos:prefLabel xml:lang="fr">Greifswald</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Hambourg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Hambourg">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/City"/>
+        <is_located_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Allemagne"/>
+        <skos:definition xml:lang="fr">Ville allemande située dans le land Hambourg au nord</skos:definition>
+        <skos:prefLabel xml:lang="fr">Hambourg</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Kunsthalle_de_Hambourg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Kunsthalle_de_Hambourg">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Museum"/>
+        <is_located_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Hambourg"/>
+        <skos:definition xml:lang="fr">Musée d&apos;art de Hambourg en Allemagne</skos:definition>
+        <skos:prefLabel xml:lang="fr">Kunsthalle de Hambourg</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#La_liberté_guidant_le_peuple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#La_liberté_guidant_le_peuple">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Painting"/>
+        <is_conserve_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Musée_du_Louvre"/>
+        <Has_Creation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1830</Has_Creation_Date>
+        <Has_Length_In_Cm rdf:datatype="http://www.w3.org/2001/XMLSchema#int">260</Has_Length_In_Cm>
+        <Has_Technique rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peinture à l&apos;huile</Has_Technique>
+        <Has_Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La liberté guidant le peuple</Has_Title>
+        <Has_Witdth_In_Cm rdf:datatype="http://www.w3.org/2001/XMLSchema#int">325</Has_Witdth_In_Cm>
+        <skos:altLabel xml:lang="en">Liberty Leading the People</skos:altLabel>
+        <skos:prefLabel xml:lang="fr">La Liberté guidant le peuple</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Le_Voyageur_contemplant_une_mer_de_nuages -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Le_Voyageur_contemplant_une_mer_de_nuages">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Painting"/>
+        <is_conserve_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Kunsthalle_de_Hambourg"/>
+        <Has_Creation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1818</Has_Creation_Date>
+        <Has_Length_In_Cm rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">94.4</Has_Length_In_Cm>
+        <Has_Technique rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Huile sur toile</Has_Technique>
+        <Has_Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le Voyageur contemplant une mer de nuages</Has_Title>
+        <Has_Witdth_In_Cm rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">74.8</Has_Witdth_In_Cm>
+        <skos:altLabel xml:lang="de">Der Wanderer über dem Nebelmeer</skos:altLabel>
+        <skos:altLabel xml:lang="en">Wanderer above the Sea of Fog</skos:altLabel>
+        <skos:prefLabel xml:lang="fr">Le voyageur contemplant une mer de nuages</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Le_radeau_de_la_Méduse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Le_radeau_de_la_Méduse">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Painting"/>
+        <is_conserve_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Musée_du_Louvre"/>
+        <Has_Creation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1819</Has_Creation_Date>
+        <Has_Length_In_Cm rdf:datatype="http://www.w3.org/2001/XMLSchema#int">491</Has_Length_In_Cm>
+        <Has_Length_In_Cm rdf:datatype="http://www.w3.org/2001/XMLSchema#int">716</Has_Length_In_Cm>
+        <Has_Technique rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toile sur bois</Has_Technique>
+        <Has_Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le radeau de la Méduse</Has_Title>
+        <skos:altLabel xml:lang="en">The Raft of the Medusa</skos:altLabel>
+        <skos:prefLabel xml:lang="fr">Le Radeau de la Méduse</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Londres -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Londres">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/City"/>
+        <is_located_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Royaume-Uni"/>
+        <skos:altLabel xml:lang="en">London</skos:altLabel>
+        <skos:definition xml:lang="fr">Capitale du Royaume-Uni située au sud-est</skos:definition>
+        <skos:prefLabel xml:lang="fr">Londres</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Minneapolis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Minneapolis">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/City"/>
+        <is_located_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Etats-Unis"/>
+        <skos:definition xml:lang="fr">Ville américaine situé dans le Minnesota dans le Nord des État-Unis</skos:definition>
+        <skos:prefLabel xml:lang="fr">Minneapolis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Minneapolis_Institute_of_Art -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Minneapolis_Institute_of_Art">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Museum"/>
+        <is_located_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Minneapolis"/>
+        <skos:definition xml:lang="fr">Musée d&apos;art de Minéapolis au États-Unis</skos:definition>
+        <skos:prefLabel xml:lang="fr">Minneapolis Institute of Art</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Musée_du_Louvre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Musée_du_Louvre">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Museum"/>
+        <is_located_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Paris"/>
+        <skos:definition xml:lang="fr">Musée d&apos;art de Paris en France</skos:definition>
+        <skos:prefLabel xml:lang="fr">Musée du Louvre</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#New_Haven -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#New_Haven">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/City"/>
+        <is_located_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Etats-Unis"/>
+        <skos:prefLabel xml:lang="fr">New Haven</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Ville américaine situé dans le Connecticut dans le nord de la côte est des État-Unis.</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Paris -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Paris">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/City"/>
+        <is_located_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#France"/>
+        <skos:definition xml:lang="fr">Capitale de la France située au centre de la France</skos:definition>
+        <skos:prefLabel xml:lang="fr">Paris</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Paysage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Paysage">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Painting"/>
+        <is_conserve_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Minneapolis_Institute_of_Art"/>
+        <Has_Creation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1825</Has_Creation_Date>
+        <Has_Technique rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Huile sur toile</Has_Technique>
+        <Has_Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paysage</Has_Title>
+        <Has_Witdth_In_Cm rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</Has_Witdth_In_Cm>
+        <Has_Witdth_In_Cm rdf:datatype="http://www.w3.org/2001/XMLSchema#int">80</Has_Witdth_In_Cm>
+        <skos:altLabel xml:lang="en">Landscape</skos:altLabel>
+        <skos:prefLabel xml:lang="fr">Paysage</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Rouen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Rouen">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/City"/>
+        <is_located_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#France"/>
+        <skos:definition xml:lang="fr">Ville française située dans la région Normandie au nord</skos:definition>
+        <skos:prefLabel xml:lang="fr">Rouen</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Royaume-Uni -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Royaume-Uni">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Country"/>
+        <skos:altLabel xml:lang="en">United Kingdom</skos:altLabel>
+        <skos:definition xml:lang="fr">Pays d&apos;Europe de l&apos;ouest</skos:definition>
+        <skos:prefLabel xml:lang="fr">Royaume-Uni</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Thomas_Cole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Thomas_Cole">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Painter"/>
+        <died_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Catskill"/>
+        <made rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Paysage"/>
+        <was_born_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Bolton"/>
+        <foaf:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">01-02-1801</foaf:birthDate>
+        <foaf:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">11-02-1848</foaf:deathDate>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thomas</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cole</foaf:lastName>
+        <skos:prefLabel>Thomas Cole</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Théodore_Géricault -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Théodore_Géricault">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Painter"/>
+        <died_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Paris"/>
+        <made rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Le_radeau_de_la_Méduse"/>
+        <was_born_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Rouen"/>
+        <foaf:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">26-09-791</foaf:birthDate>
+        <foaf:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">26-01-1824</foaf:deathDate>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jean-Louis-André-Théodore</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Géricault</foaf:lastName>
+        <skos:altLabel>Jean-Louis-André-Théodore Géricault</skos:altLabel>
+        <skos:prefLabel>Théodore Géricault</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#William_Turner -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#William_Turner">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Painter"/>
+        <died_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#New_Haven"/>
+        <made rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#L&apos;éruption_du_Vésuve"/>
+        <was_born_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Londres"/>
+        <foaf:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">23-05-1775</foaf:birthDate>
+        <foaf:deathDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">19-12-1851</foaf:deathDate>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joseph Mallord William</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turner</foaf:lastName>
+        <skos:altLabel>Joseph Mallord William Tuner</skos:altLabel>
+        <skos:prefLabel>William Turner</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Centre_d&apos;art_britannique_de_Yale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Centre_d&apos;art_britannique_de_Yale">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Museum"/>
+        <is_located_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#New_Haven"/>
+        <skos:altLabel xml:lang="en">Yale Center for British Art</skos:altLabel>
+        <skos:definition xml:lang="fr">(from wikipedia)
+Le Centre d&apos;art britannique de Yale est un musée de l&apos;université Yale à New Haven, Connecticut. Il abrite la collection la plus complète d’art britannique en dehors du Royaume-Uni. Ses collections sont concentrés sur les œuvres datées à partir de l&apos;ère élisabéthaine.</skos:definition>
+        <skos:prefLabel xml:lang="fr">Centre d&apos;art britannique de Yale</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#L&apos;éruption_du_Vésuve -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#L&apos;éruption_du_Vésuve">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Painting"/>
+        <is_conserve_in rdf:resource="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Centre_d&apos;art_britannique_de_Yale"/>
+        <Has_Creation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1817</Has_Creation_Date>
+        <Has_Length_In_Cm rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28.6</Has_Length_In_Cm>
+        <Has_Technique rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aquarelle</Has_Technique>
+        <Has_Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L&apos;Éruption du Vésuve</Has_Title>
+        <Has_Witdth_In_Cm rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">39.7</Has_Witdth_In_Cm>
+        <skos:altLabel xml:lang="en">Vesuvius in Eruption</skos:altLabel>
+        <skos:prefLabel xml:lang="fr">L&apos;Éruption du Vésuve</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <skos:prefLabel xml:lang="en">Thing</skos:prefLabel>
+        <skos:exemple xml:lang="en">Artwork</skos:exemple>
+        <skos:definition xml:lang="fr">Classe qui regroupe toute les autres</skos:definition>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://dbpedia.org/ontology/City"/>
+            <rdf:Description rdf:about="http://dbpedia.org/ontology/Country"/>
+            <rdf:Description rdf:about="http://dbpedia.org/ontology/Museum"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Allemagne"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Bolton"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Caspar_David_Friedrich"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Catskill"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Charenton-Saint-Maurice"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Dresde"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Eugène_Delacroix"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#France"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Greifswald"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Hambourg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Kunsthalle_de_Hambourg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#La_liberté_guidant_le_peuple"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Le_Voyageur_contemplant_une_mer_de_nuages"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Le_radeau_de_la_Méduse"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Londres"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Minneapolis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Minneapolis_Institute_of_Art"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Musée_du_Louvre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#New_Haven"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Paris"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Paysage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Rouen"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Royaume-Uni"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Thomas_Cole"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Centre_d&apos;art_britannique_de_Yale"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#L&apos;éruption_du_Vésuve"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Caspar_David_Friedrich"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Eugène_Delacroix"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Thomas_Cole"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Théodore_Géricault"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#William_Turner"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Catskill"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Charenton-Saint-Maurice"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Dresde"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Etats-Unis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Eugène_Delacroix"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#France"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Greifswald"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Hambourg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Kunsthalle_de_Hambourg"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#La_liberté_guidant_le_peuple"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Le_Voyageur_contemplant_une_mer_de_nuages"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Le_radeau_de_la_Méduse"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Londres"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Minneapolis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Minneapolis_Institute_of_Art"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Musée_du_Louvre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#New_Haven"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Paris"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Paysage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Rouen"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Royaume-Uni"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Thomas_Cole"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Théodore_Géricault"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#William_Turner"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#Centre_d&apos;art_britannique_de_Yale"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexa_darmagnac_lucas_menicot#L&apos;éruption_du_Vésuve"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
